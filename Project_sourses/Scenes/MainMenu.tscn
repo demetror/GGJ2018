@@ -1,4 +1,6 @@
-[gd_scene format=1]
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Project_sourses/Scenes/MainMenu.gd" type="Script" id=1]
 
 [node name="Panel" type="Panel"]
 
@@ -10,6 +12,10 @@ margin/left = 0.0
 margin/top = 0.0
 margin/right = 1024.0
 margin/bottom = 601.0
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Label" type="Label" parent="."]
 
@@ -17,10 +23,10 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 410.0
-margin/top = 101.0
-margin/right = 616.0
-margin/bottom = 199.0
+margin/left = 102.0
+margin/top = 3.0
+margin/right = 923.0
+margin/bottom = 200.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Legacy"
 align = 1
@@ -29,7 +35,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Button" type="Button" parent="."]
+[node name="Settings" type="Button" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -44,8 +50,11 @@ enabled_focus_mode = 2
 shortcut = null
 text = "Settings"
 flat = false
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Button1" type="Button" parent="."]
+[node name="Play" type="Button" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -60,8 +69,182 @@ enabled_focus_mode = 2
 shortcut = null
 text = "Play!"
 flat = false
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Button2" type="Button" parent="."]
+[node name="Play1" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play2" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play3" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play4" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play5" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play6" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play7" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play8" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play9" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Exit" type="Button" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -76,5 +259,8 @@ enabled_focus_mode = 2
 shortcut = null
 text = "Exit :("
 flat = false
+__meta__ = {
+"_edit_lock_": true
+}
 
 
