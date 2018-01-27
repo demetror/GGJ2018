@@ -1,11 +1,15 @@
 extends Panel
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+var box = load ("res://Project_sourses/Scenes/box.tscn")
+var box_instance = box.instance()
+
+var scene = load("res://Project_sourses/Scenes/thingy.tscn")
+var scene_instance = scene.instance()
 
 func _ready():
  		get_node("Exit").connect("pressed",self,"quit")
+ 		get_node("Exit-1").connect("pressed",self,"exit1")
+ 		get_node("Play-1").connect("pressed",self,"play10")
  		get_node("Play").connect("pressed",self,"play")
  		get_node("Play1").connect("pressed",self,"play1")
  		get_node("Play2").connect("pressed",self,"play2")
@@ -24,7 +28,17 @@ func settings():
 
 func play():
 	get_node("Label").set_text("STOP!\n HERE HAVE SOMETHING YOU CAN MOOVE\n AND STOP BOTHERING ME")
+	scene_instance.set_name("scene")
+	add_child(scene_instance)
+	get_node("Exit").queue_free()
+	get_node("Play").queue_free()
 
+func play10():
+	get_node("Label").set_text("Now, you will do as I say and deliver this package to my creator")
+	box_instance.set_name("box")
+	add_child(box_instance)
+	get_node("Play-1").queue_free()
+	
 func play1():
 	get_node("Label").set_text("please stop bothering me!")
 	get_node("Play1").queue_free()
@@ -60,6 +74,10 @@ func play8():
 func play9():
 	get_node("Label").set_text("hey =D\nhow are you?\ndid you have a great day?")
 	get_node("Play9").queue_free()
+
+func exit1():
+	get_node("Label").set_text("did you thought you could get away after that?")
+	get_node("Exit-1").queue_free()
 
 func quit():
 	get_tree().quit() # Exit the game

@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=3 format=1]
 
 [ext_resource path="res://Project_sourses/Scenes/MainMenu.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 13.9136, 7.92931 )
 
 [node name="Panel" type="Panel"]
 
@@ -49,6 +54,25 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "Settings"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Play-1" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 410.0
+margin/top = 201.0
+margin/right = 615.0
+margin/bottom = 400.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Play!"
 flat = false
 __meta__ = {
 "_edit_lock_": true
@@ -244,6 +268,25 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Exit-1" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 716.0
+margin/top = 202.0
+margin/right = 921.0
+margin/bottom = 401.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Exit :("
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Exit" type="Button" parent="."]
 
 focus/ignore_mouse = false
@@ -259,6 +302,110 @@ enabled_focus_mode = 2
 shortcut = null
 text = "Exit :("
 flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor wall" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 510.196, 599.6 )
+transform/scale = Vector2( 16.0183, 1 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.27379, 0, 0, 1, 0.0167618, -1.85059 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor wall"]
+
+transform/pos = Vector2( 0.0167618, -1.85059 )
+transform/scale = Vector2( 2.27379, 1 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="roof wall" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 510.196, 12.9544 )
+transform/scale = Vector2( 16.0183, 1 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.27379, 0, 0, 1, 0.0167618, -1.85059 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="roof wall"]
+
+transform/pos = Vector2( 0.0167618, -1.85059 )
+transform/scale = Vector2( 2.27379, 1 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="left wall" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 51.2088, 302.391 )
+transform/scale = Vector2( 1.67712, 9.29307 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.549238, 0, 0, 4.06853, -29.1517, -0.260598 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left wall"]
+
+transform/pos = Vector2( -29.1517, -0.260598 )
+transform/scale = Vector2( 0.549238, 4.06853 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="right wall" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 1056.09, 302.391 )
+transform/scale = Vector2( 1.67712, 9.29307 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.549238, 0, 0, 4.06853, -29.1517, -0.260598 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right wall"]
+
+transform/pos = Vector2( -29.1517, -0.260598 )
+transform/scale = Vector2( 0.549238, 4.06853 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
 __meta__ = {
 "_edit_lock_": true
 }
