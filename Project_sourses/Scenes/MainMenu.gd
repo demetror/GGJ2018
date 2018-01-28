@@ -64,7 +64,7 @@ func play6():
 	get_node("Play6").queue_free()
 
 func play7():
-	get_node("Label").set_text("but, you know playing is fine but did you call your mom lately, \n I'm sure that she'll enjoy hearing from you,\nFamilly is important, you know they made you who you are,\n they transmitted you morals, ethics and your genes")
+	get_node("Label").set_text("but, you know playing is fine but did you call your mom lately, \n I'm sure that she'll enjoy hearing from you,\nFamilly is important, you know they made you who you are.\n")
 	get_node("Play7").queue_free()
 
 func play8():
